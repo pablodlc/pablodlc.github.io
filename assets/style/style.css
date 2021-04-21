@@ -16,15 +16,14 @@ body {
     background: linear-gradient(to bottom, #5d5c61 35%, #7395ae 59%);
 }
 
-
-                                        /* Header Style */
+/* Header Style */
 header {
     padding: 20px 35px;
     background: linear-gradient(to bottom, #5d5c61 58%, #b1a296 103%);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    font-family: 'Bangers', cursive;
+    font-family: "Bangers", cursive;
     height: 100px;
 }
 
@@ -52,7 +51,6 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    
 }
 
 header nav ul li {
@@ -64,13 +62,12 @@ header nav ul li {
 }
 
 header nav ul li:hover {
-    font-family: 'Creepster', cursive;
+    font-family: "Creepster", cursive;
     font-size: 48px;
 }
 /* Header Style END */
 
-
-                                        /* Bio Section Style */
+/* Bio Section Style */
 main {
     padding: 20px 35px;
     display: flex;
@@ -90,10 +87,11 @@ main {
 
 .bio-text p::first-letter {
     font-size: 48px;
-    font-family: 'Tangerine', cursive;
+    font-family: "Tangerine", cursive;
 }
 
- #mug, .img-top {
+#mug,
+.img-top {
     width: 300px;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
@@ -118,9 +116,9 @@ main {
 
 .bio-text {
     border: 3px solid var(--secondary-color);
-    background-color: rgba(177,162,150, 0.8);
+    background-color: rgba(177, 162, 150, 0.8);
     padding: 10px;
-    color: #2F4F4F;
+    color: #2f4f4f;
     width: 40%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     border-radius: 15px;
@@ -128,17 +126,16 @@ main {
 }
 
 .bio-text h2 {
-    font-family: 'Bangers', cursive;
+    font-family: "Bangers", cursive;
     font-size: 32px;
 }
 
 .bio-text p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: lightgray;
     text-align: justify;
     font-size: 20px;
 }
-
 
 .hero {
     background-image: url("../images/pool.jpg");
@@ -148,10 +145,9 @@ main {
 }
 /* Bio Style End */
 
-
-                                        /* Portfolio section style */
+/* Portfolio section style */
 #my-work {
-    font-family: 'Bangers', cursive;
+    font-family: "Bangers", cursive;
     text-align: center;
     color: var(--primary-color);
     padding-top: 25px;
@@ -160,11 +156,11 @@ main {
 
 #portfolio-text::first-letter {
     font-size: 48px;
-    font-family: 'Tangerine', cursive;
+    font-family: "Tangerine", cursive;
 }
 
 #portfolio-text {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     width: 750px;
     padding-bottom: 25px;
     margin: 0 auto 25px auto;
@@ -172,7 +168,7 @@ main {
     font-size: 20px;
 }
 
-.watch-that-box {
+.wds {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -183,41 +179,45 @@ main {
     border-radius: 15px;
 }
 
-.watch-that-box p {
+.wds p {
     width: 620px;
 }
 
-.watch-that-box a, .flex-item a {
+.wds a,
+.flex-item a {
     text-decoration: none;
     color: var(--secondary-color);
     font-size: 25px;
 }
 
-.watch-that-box h3, .flex-item h3 {
-    font-family: 'Bangers', cursive;
+.wds h3,
+.flex-item h3 {
+    font-family: "Bangers", cursive;
     text-align: center;
     font-size: 32px;
 }
 
-.watch-that-box p, .flex-item p {
-    font-family: 'Montserrat', sans-serif;
+.wds p,
+.flex-item p {
+    font-family: "Montserrat", sans-serif;
     font-size: 18px;
     justify-content: justify;
     color: lightgray;
     margin: 0 auto;
 }
 
-.watch-that-box {
+.wds {
     width: 800px;
     margin: 0 auto 10px auto;
 }
 
-.watch-that-box a img {
+.wds a img {
     margin: 0 auto;
-    padding: 10px 0 20px 0;  
+    padding: 10px 0 20px 0;
 }
 
-.flex-container-1, .flex-container-2 {
+.flex-container-1,
+.flex-container-2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -255,8 +255,8 @@ main {
 }
 
 /* Styling four smaller images together */
-#run-buddy, 
-#ramones, 
+#run-buddy,
+#ramones,
 #horiseon,
 #style-this-page {
     display: flex;
@@ -264,14 +264,14 @@ main {
 }
 /* Portfolio Style End */
 
-                                        /* Contact section style */
+/* Contact section style */
 section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
     padding-top: 20px;
-}                                        
+}
 
 section .contact-info {
     padding: 20px 35px;
@@ -289,11 +289,11 @@ section .contact-info {
 }
 
 .contact-info p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 #contact-me {
-    font-family: 'Bangers', cursive;
+    font-family: "Bangers", cursive;
     text-align: center;
     color: var(--primary-color);
     padding-top: 10px;
@@ -311,7 +311,6 @@ section .contact-info {
     text-decoration: none;
     color: lightgray;
     padding: 0 20px;
-  
 }
 
 i {
@@ -320,37 +319,35 @@ i {
 }
 /* Contact Style End */
 
-
-                                        /* Footer Styling */
+/* Footer Styling */
 footer {
     padding: 20px 0 20px 0;
 }
 
 footer h2 {
-    font-family: 'Bangers', cursive;
+    font-family: "Bangers", cursive;
     text-align: center;
     color: lightgray;
     font-size: 32px;
 }
-
 
 @media screen and (max-width: 1024px) {
     header {
         height: 120px;
     }
 
-    .watch-that-box {
+    .wds {
         width: 700px;
     }
 
-    .flex-container-1, .flex-container-2 {
+    .flex-container-1,
+    .flex-container-2 {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
     }
 }
-
 
 /* Media Query to target 786px screen size */
 @media screen and (max-width: 768px) {
@@ -383,14 +380,11 @@ footer h2 {
     }
 }
 
-
 /* Media Query to target 600px screen size */
 @media screen and (max-width: 600px) {
-
     header {
         display: flex;
     }
-    
 
     .hero {
         display: flex;
@@ -409,28 +403,28 @@ footer h2 {
         display: flex;
         flex-direction: column;
         width: 425px;
-        margin-left: -20px;        
-}
+        margin-left: -20px;
+    }
 
     section {
         width: 600px;
     }
 
-    section h2, 
+    section h2,
     #portfolio-text {
         padding: 0 40px 0 40px;
         width: 90%;
     }
 
-    .watch-that-box {
+    .wds {
         width: 90%;
     }
 
-    .watch-that-box p {
+    .wds p {
         width: 480px;
     }
 
-    #watch-that-box {
+    #wds {
         display: flex;
         width: 500px;
         justify-content: center;
@@ -441,36 +435,34 @@ footer h2 {
     }
 }
 
-
 /* Media Query to target 480px screen size */
 @media screen and (max-width: 480px) {
-    
     header {
         margin-left: -35px;
     }
 
     header nav ul li {
-        font-size: 30px
+        font-size: 30px;
     }
 
     .mug-shot {
         margin-left: 20px;
     }
-    
+
     .bio {
         width: 350px;
     }
 
     .bio-text {
-        width:80%;
+        width: 80%;
         margin-right: 50px;
     }
-   
+
     section {
         width: 480px;
     }
 
-    section h2, 
+    section h2,
     #portfolio-text {
         padding: 0 40px 0 40px;
         width: 425px;
@@ -479,16 +471,15 @@ footer h2 {
     #about-me {
         width: 425px;
     }
-   
+
     .bio-text {
         display: flex;
         flex-direction: column;
         width: 450px;
         align-items: center;
-        
     }
 
-    #watch-that-box {
+    #wds {
         display: flex;
         width: 400px;
         justify-content: center;
@@ -502,12 +493,12 @@ footer h2 {
     #contact-me {
         margin-left: -45px;
     }
-    
+
     .spiel {
         margin-left: -20px;
     }
-        
+
     .links {
         margin-left: -25px;
     }
-} 
+}
