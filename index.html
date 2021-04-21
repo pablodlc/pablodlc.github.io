@@ -1,12 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/style/style.css" />
+        <script
+            src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+            data-auto-replace-svg="nest"
+        ></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bangers&family=Creepster&family=Montserrat&family=Tangerine:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <title>pablodlc</title>
+    </head>
+    <body>
+        <header>
+            <h1>
+                <a href="/">Pablo De La Cruz</a>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about-me">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#my-work">My Work</a>
+                    </li>
+                    <li>
+                        <a href="#contact-me">Contact Me</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="hero">
+            <div class="bio">
+                <div class="mug-shot">
+                    <img
+                        src="./assets/images/mug.jpg"
+                        id="mug"
+                        alt="Yours truly, a little Neegan with a dash of Mr. Bean in appearance.  You know, but hairy."
+                    />
+                    <img
+                        src="./assets/images/beardo.jpg"
+                        class="img-top"
+                        alt="Yours truly but hairier!"
+                    />
+                </div>
+            </div>
+
+            <div class="bio-text">
+                <h2 id="about-me">About Me</h2>
+                <p>
+                    Hello World! My name is Pablo and I'm a fledging programmer.
+                    I have a varied background; food service, retail, social
+                    work, law, and currently manufacturing. I made a cookie
+                    cutter webpage long ago and thought it was great fun.
+                    Somehow it never occured to me that I could enjoy it
+                    professionally.
+                </p>
+            </div>
+        </main>
+
+        <section>
+            <h2 id="my-work">My Work</h2>
+
+            <p id="portfolio-text">
+                Welcome to my portfolio. <br />
+                I am quite new to programming, so my portfolio isn't very strong
+                yet. I included a fun little project called Watch That Box that
+                used a bit of JavaScript to change the styling on a box. Two of
+                my portfolio items are class assignments. Hori<span class="seo"
+                    >seo</span
+                >n was a refactor challenge to make the landing page more
+                accessible. Run Buddy was a step-by-step, module-led build.
+                Style This Page is painfully generic, and I'm looking forward to
+                retiring it from my portfolio as I get better and have cooler
+                sites to share. Ramones. Seriously, that page is great if only
+                becuase of its subject.
+            </p>
+
+            <div class="watch-that-box">
+                <h3>
+                    <a
+                        href="https://pablodlc.github.io/WatchThatBox/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Watch That Box!</a
+                    >
+                </h3>
+                <p>
+                    A simple HTML and CSS project, and some rudimentary
+                    JavaScript, containing a box and buttons that change the
+                    styling of the box.
+                </p>
+
+                <a
+                    href="https://pablodlc.github.io/WatchThatBox/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img
+                        src="./assets/images/WatchThatBox.gif"
+                        alt="A box with several buttons that change the styling by doing their namesake, such as grow, fade, and reset."
+                        id="watch-that-box"
+                    />
+                </a>
+            </div>
+
+            <div class="flex-container-1">
+                <div class="flex-item">
+                    <h3>
+                        <a
+                            href="https://pablodlc.github.io/run-buddy/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Run Buddy</a
+                        >
+                    </h3>
+
+                    <p>
+                        Run Buddy's landing page, made with HTML and CSS, to
+                        include Flexbox and media queries.
+                    </p>
+
+                    <a
+                        href="https://pablodlc.github.io/run-buddy/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="./assets/images/RunBuddy.jpg"
+                            alt="A landing page for a company called Run Buddy, a webiste that pairs users with personal trainers."
+                            id="run-buddy"
+                        />
+                    </a>
+                </div>
+
+                <div class="flex-item">
+                    <h3>
+                        <a
+                            href="https://pablodlc.github.io/MFM/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="no-dec"
+                            >RAMONES Fanpage</a
+                        >
+                    </h3>
+
+                    <p>
+                        A vanilla HTML fanpage for the greatest band of all
+                        time. Ever.
+                    </p>
+
+                    <a
+                        href="https://pablodlc.github.io/MFM/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="./assets/images/Ramones.jpg"
+                            alt="A rudimentary HTML fanpage about the ones who came first: The Ramones."
+                            id="ramones"
+                        />
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex-container-2">
+                <div class="flex-item">
+                    <h3>
+                        <a
+                            href="https://pablodlc.github.io/code-refactor/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Hori<span id="seo">seo</span>n</a
+                        >
+                    </h3>
+
+                    <p>
+                        A code refactor assignment to improve Horiseon's
+                        homepage's accessibility.
+                    </p>
+
+                    <a
+                        href="https://pablodlc.github.io/code-refactor/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="./assets/images/Horiseon.jpg"
+                            alt="A landing page for a company called Horiseon, a search engine optimization company."
+                            id="horiseon"
+                        />
+                    </a>
+                </div>
+
+                <div class="flex-item">
+                    <h3>
+                        <a
+                            href="https://pablodlc.github.io/StyleThisPage/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Style This page</a
+                        >
+                    </h3>
+
+                    <p>
+                        A very basic HTML page with simple CSS styles applied to
+                        various lines.
+                    </p>
+
+                    <a
+                        href="https://pablodlc.github.io/StyleThisPage/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="./assets/images/StyleThisPage.jpg"
+                            alt="A very basic HTML page to introduce basic CSS styling, like text sizes and colors."
+                            id="style-this-page"
+                        />
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="contact-info">
+                <h2 id="contact-me">Contact Me!</h2>
+
+                <div class="spiel">
+                    <p>
+                        Any questions or comments for me or my work?
+                        <br />
+                        Do you want to pay me to do this for you?
+                        <br />
+                        Or have you always wanted to be someone's benefactor?
+                        <br />
+                        Need a friend?
+                        <br />
+                        Check out my information below!
+                    </p>
+                </div>
+
+                <address>
+                    <div class="links">
+                        <a
+                            href="https://github.com/pablodlc"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/pablodlc"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+
+                        <a
+                            href="https://paypal.me/pablodlc"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i class="fab fa-paypal"></i>
+                        </a>
+
+                        <a href="mailto://pablodlc@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </address>
+            </div>
+        </section>
+
+        <footer>
+            <h2>Made with ❤️️ by pablodlc</h2>
+        </footer>
+    </body>
 </html>
