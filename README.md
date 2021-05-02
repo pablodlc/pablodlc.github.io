@@ -1,13 +1,12 @@
-# professional-portfolio
+# pablodlc: portfolio
 
-## Description
-
-A portfolio for the up-and-coming programmer, [pablodlc](https://github.com/pablodlc), featuring several projects I have worked on.
+### A portfolio for the up-and-coming programmer, me, [pablodlc](https://github.com/pablodlc), featuring several projects I have worked on.
 
 ## Application
 
 Visit my portfolio by clicking [here](https://pablodlc.github.io).  
-My portfolio contains a brief bio, a section called My Work that includes five pages I've worked on, and a Contact Me section with links to my Github, LinkedIn, PayPal, and email.
+![What's been described as the Mona Lisa of portfolios, a portfolio page for me, pablodlc](./assets/gifs/pablodlc.gif)
+My portfolio contains a brief bio, a section called My Work that includes several pages I've worked on, and a Contact Me section with links to my Github, LinkedIn, PayPal, and email.
 
 ## Future Developments
 
