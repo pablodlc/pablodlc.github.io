@@ -221,7 +221,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 10px;
 }
 
@@ -258,7 +258,7 @@ main {
 #run-buddy,
 #ramones,
 #horiseon,
-#style-this-page {
+#pw-gen {
     display: flex;
     width: 400px;
 }
