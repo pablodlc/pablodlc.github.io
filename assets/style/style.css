@@ -13,13 +13,14 @@
 }
 
 body {
-    background: linear-gradient(to bottom, #5d5c61 35%, #7395ae 59%);
+    background: linear-gradient(to bottom, #7395ae 35%, #5d5c61 59%);
 }
 
 /* Header Style */
 header {
     padding: 20px 35px;
-    background: linear-gradient(to bottom, #5d5c61 58%, #b1a296 103%);
+    /* background: linear-gradient(to bottom, #5d5c61 58%, #b1a296 103%); */
+    background-color: #5d5c61;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -145,13 +146,96 @@ main {
 }
 /* Bio Style End */
 
-/* Portfolio section style */
-#my-work {
+section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 20px;
+}
+
+section .contact-info {
+    padding: 20px 35px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 3px solid var(--secondary-color);
+    background: linear-gradient(to bottom, #5d5c61 25%, #b1a296 81%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    color: lightgray;
+}
+
+.contact-info p {
+    font-family: "Montserrat", sans-serif;
+}
+
+#contact-me {
     font-family: "Bangers", cursive;
     text-align: center;
     color: var(--primary-color);
-    padding-top: 25px;
+    padding-top: 10px;
     font-size: 32px;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+.links a {
+    text-decoration: none;
+    color: lightgray;
+    padding: 0 20px;
+}
+
+i {
+    color: var(--primary-color);
+    font-size: 40px;
+}
+/* Contact Style End */
+
+/* Footer Styling */
+footer {
+    padding: 20px 0 20px 0;
+}
+
+footer h2 {
+    font-family: "Bangers", cursive;
+    text-align: center;
+    color: lightgray;
+    font-size: 32px;
+}
+
+/*  ////// portfolio.html ////// */
+
+#port-blurb-container {
+    margin: 0 auto;
+}
+
+#port-blurb {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#port-blurb h2 {
+}
+
+#my-work {
+    font-family: "Bangers", cursive;
+    text-align: center;
+    /* color: var(--primary-color); */
+    color: var(--secondary-color);
+    font-size: 36px;
+    margin: 0;
 }
 
 #portfolio-text::first-letter {
@@ -163,9 +247,10 @@ main {
     font-family: "Montserrat", sans-serif;
     width: 750px;
     padding-bottom: 25px;
-    margin: 0 auto 25px auto;
+    margin: 0 auto;
     color: lightgray;
     font-size: 20px;
+    text-align: justify;
 }
 
 .wds {
@@ -177,6 +262,11 @@ main {
     background: linear-gradient(to bottom, #b1a296 25%, #5d5c61 81%);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+#wds2 {
+    width: 640px;
 }
 
 .wds p {
@@ -261,74 +351,6 @@ main {
 #pw-gen {
     display: flex;
     width: 400px;
-}
-/* Portfolio Style End */
-
-/* Contact section style */
-section {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    padding-top: 20px;
-}
-
-section .contact-info {
-    padding: 20px 35px;
-}
-
-.contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    border: 3px solid var(--secondary-color);
-    background: linear-gradient(to bottom, #5d5c61 25%, #b1a296 81%);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-    border-radius: 15px;
-    color: lightgray;
-}
-
-.contact-info p {
-    font-family: "Montserrat", sans-serif;
-}
-
-#contact-me {
-    font-family: "Bangers", cursive;
-    text-align: center;
-    color: var(--primary-color);
-    padding-top: 10px;
-    font-size: 32px;
-}
-
-.links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-top: 10px;
-}
-
-.links a {
-    text-decoration: none;
-    color: lightgray;
-    padding: 0 20px;
-}
-
-i {
-    color: var(--primary-color);
-    font-size: 40px;
-}
-/* Contact Style End */
-
-/* Footer Styling */
-footer {
-    padding: 20px 0 20px 0;
-}
-
-footer h2 {
-    font-family: "Bangers", cursive;
-    text-align: center;
-    color: lightgray;
-    font-size: 32px;
 }
 
 @media screen and (max-width: 1024px) {
