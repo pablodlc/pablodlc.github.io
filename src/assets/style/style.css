@@ -1,0 +1,526 @@
+/* save this color for shadow color: #553d67; */
+/* Setting color scheme */
+:root {
+    --primary-color: #7395ae;
+    --secondary-color: #5d5c61;
+    --tertiary-color: #b1a296;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #7395ae 35%, #5d5c61 59%);
+}
+
+/* Header Style */
+header {
+    padding: 20px 35px;
+    /* background: linear-gradient(to bottom, #5d5c61 58%, #b1a296 103%); */
+    background-color: #5d5c61;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: "Bangers", cursive;
+    height: 100px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 0;
+}
+
+header h1 {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 48px;
+    margin: 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 36px;
+    justify-content: center;
+    margin: 0 15px;
+}
+
+header nav ul li:hover {
+    font-family: "Creepster", cursive;
+    font-size: 48px;
+}
+/* Header Style END */
+
+/* Bio Section Style */
+main {
+    padding: 20px 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mug-shot {
+    flex: 1 5%;
+    margin-right: 20px;
+}
+
+.bio-text {
+    flex: 2;
+}
+
+.bio-text p::first-letter {
+    font-size: 48px;
+    font-family: "Tangerine", cursive;
+}
+
+#mug,
+.img-top {
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.mug-shot {
+    position: relative;
+    display: inline-block;
+}
+
+.mug-shot .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.mug-shot:hover .img-top {
+    display: inline;
+}
+
+.bio-text {
+    border: 3px solid var(--secondary-color);
+    background-color: rgba(177, 162, 150, 0.8);
+    padding: 10px;
+    color: #2f4f4f;
+    width: 40%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.bio-text h2 {
+    font-family: "Bangers", cursive;
+    font-size: 32px;
+}
+
+.bio-text p {
+    font-family: "Montserrat", sans-serif;
+    color: #2f4f4f;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.hero {
+    background-image: url("../images/pool.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+/* Bio Style End */
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 20px;
+}
+
+section .contact-info {
+    padding: 20px 35px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 3px solid var(--secondary-color);
+    background: linear-gradient(to bottom, #5d5c61 25%, #b1a296 81%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    color: lightgray;
+}
+
+.contact-info p {
+    font-family: "Montserrat", sans-serif;
+}
+
+#contact-me {
+    font-family: "Bangers", cursive;
+    text-align: center;
+    color: var(--primary-color);
+    padding-top: 10px;
+    font-size: 32px;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+.links a {
+    text-decoration: none;
+    color: lightgray;
+    padding: 0 20px;
+}
+
+i {
+    color: var(--primary-color);
+    font-size: 40px;
+}
+/* Contact Style End */
+
+/* Footer Styling */
+footer {
+    padding: 20px 0 20px 0;
+}
+
+footer h2 {
+    font-family: "Bangers", cursive;
+    text-align: center;
+    color: lightgray;
+    font-size: 32px;
+}
+
+/*  ////// portfolio.html ////// */
+
+#port-blurb-container {
+    margin: 0 auto;
+}
+
+#port-blurb {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#port-blurb h2 {
+}
+
+#my-work {
+    font-family: "Bangers", cursive;
+    text-align: center;
+    /* color: var(--primary-color); */
+    color: var(--secondary-color);
+    font-size: 36px;
+    margin: 0;
+}
+
+#portfolio-text::first-letter {
+    font-size: 48px;
+    font-family: "Tangerine", cursive;
+}
+
+#portfolio-text {
+    font-family: "Montserrat", sans-serif;
+    width: 750px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+    color: lightgray;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.wds {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    border: 3px solid var(--secondary-color);
+    background: linear-gradient(to bottom, #b1a296 25%, #5d5c61 81%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+#wds2 {
+    width: 640px;
+}
+
+.wds p {
+    width: 620px;
+}
+
+.wds a,
+.flex-item a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 25px;
+}
+
+.wds h3,
+.flex-item h3 {
+    font-family: "Bangers", cursive;
+    text-align: center;
+    font-size: 32px;
+}
+
+.wds p,
+.flex-item p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    justify-content: justify;
+    color: lightgray;
+    margin: 0 auto;
+}
+
+.wds {
+    width: 800px;
+    margin: 0 auto 10px auto;
+}
+
+.wds a img {
+    margin: 0 auto;
+    padding: 10px 0 20px 0;
+}
+
+.flex-container-1,
+.flex-container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.flex-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 3px solid var(--secondary-color);
+    background: linear-gradient(to bottom, #b1a296 25%, #5d5c61 81%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    margin: 10px 22px;
+    padding: 15px;
+    flex-basis: auto;
+    align-content: center;
+}
+
+.flex-item p {
+    width: 390px;
+}
+
+.flex-item img {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+/* © 2019 Horiseon Social Solution Services, Inc. */
+#seo {
+    color: #d9dcd6;
+}
+
+/* Styling four smaller images together */
+#run-buddy,
+#ramones,
+#horiseon,
+#pw-gen {
+    display: flex;
+    width: 400px;
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: 120px;
+    }
+
+    .wds {
+        width: 700px;
+    }
+
+    .flex-container-1,
+    .flex-container-2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+/* Media Query to target 786px screen size */
+@media screen and (max-width: 768px) {
+    header h1 {
+        margin-left: 18px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mug {
+        width: 250px;
+    }
+
+    .mug-shot {
+        margin: 0 20px 10px 0;
+    }
+
+    .bio-text {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        margin-right: 20px;
+    }
+
+    section p {
+        padding: 0 40px 0 40px;
+    }
+}
+
+/* Media Query to target 600px screen size */
+@media screen and (max-width: 600px) {
+    header {
+        display: flex;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mug {
+        width: 250px;
+    }
+
+    .mug-shot {
+        margin: 0 20px 10px 0;
+    }
+
+    .bio-text {
+        display: flex;
+        flex-direction: column;
+        width: 425px;
+        margin-left: -20px;
+    }
+
+    section {
+        width: 600px;
+    }
+
+    section h2,
+    #portfolio-text {
+        padding: 0 40px 0 40px;
+        width: 90%;
+    }
+
+    .wds {
+        width: 90%;
+    }
+
+    .wds p {
+        width: 480px;
+    }
+
+    #wds {
+        display: flex;
+        width: 500px;
+        justify-content: center;
+    }
+
+    .contact-info {
+        width: 90%;
+    }
+}
+
+/* Media Query to target 480px screen size */
+@media screen and (max-width: 480px) {
+    header {
+        margin-left: -35px;
+    }
+
+    header nav ul li {
+        font-size: 30px;
+    }
+
+    .mug-shot {
+        margin-left: 20px;
+    }
+
+    .bio {
+        width: 350px;
+    }
+
+    .bio-text {
+        width: 80%;
+        margin-right: 50px;
+    }
+
+    section {
+        width: 480px;
+    }
+
+    section h2,
+    #portfolio-text {
+        padding: 0 40px 0 40px;
+        width: 425px;
+    }
+
+    #about-me {
+        width: 425px;
+    }
+
+    .bio-text {
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        align-items: center;
+    }
+
+    #wds {
+        display: flex;
+        width: 400px;
+        justify-content: center;
+    }
+
+    .contact-info p {
+        width: 400px;
+        padding-bottom: 10px;
+    }
+
+    #contact-me {
+        margin-left: -45px;
+    }
+
+    .spiel {
+        margin-left: -20px;
+    }
+
+    .links {
+        margin-left: -25px;
+    }
+}
