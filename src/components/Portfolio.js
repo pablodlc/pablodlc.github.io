@@ -27,9 +27,10 @@ const useStyles = makeStyles({
         flexWrap: 'wrap',
         flexDirection: 'row',
         width: '100%',
-
+        justifyContent: 'center'
     },
     welcomeCard: {
+        width: '75%',
         borderRadius: '16px',
         backgroundColor: '#b1a296',
         padding: '15px 24px 0px',
@@ -58,7 +59,8 @@ const useStyles = makeStyles({
     portCards: {
         display: 'flex',
         flexWrap: 'wrap',
-        flexDirection: 'row',
+        justifyContent: 'center'
+
     },
     cardFlex: {
         display: 'flex',
@@ -76,6 +78,13 @@ const useStyles = makeStyles({
         fontSize: '40px',
         textShadow: '0 0 8px rgba(0, 0, 0, 0.8)',
         textAlign: 'center'
+    },
+    justify: {
+        textAlign: 'justify',
+        paddingTop: '8px'
+    },
+    boxShadow: {
+        boxShadow: '0 0 10px rgba(0, 0, 0, 0.8)'
     }
 });
 
@@ -88,7 +97,7 @@ function Portfolio() {
             <Router>
                 <div>
 
-                    <Row className={classes.row} class="xs-2">
+                    <Row className={classes.row}>
                         <Card className={classes.welcomeCard}>
 
                             <Card.Title>
@@ -111,7 +120,7 @@ function Portfolio() {
                     </Row>
 
 
-                    <Row>
+                    <Row className={classes.row}>
                         <div className={classes.portCards}>
 
                             <Col xs="6" sm="4" className={classes.portCol}>
@@ -125,10 +134,12 @@ function Portfolio() {
                                             </h3>
                                         </Card.Title>
 
-                                        <Card.Img variant="top" src={mml} />
+                                        <Card.Img variant="top" src={mml} className={classes.boxShadow} />
 
                                         <Card.Text>
-                                            Here's the second of three group projects where three other classmates and I made a full- stack application that uses its own server and the OMDB API for some movie data. Users can create lists, like other users' lists, comment on others' lists as well as their own.
+                                            <div className={classes.justify}>
+                                                Here's the second of three group projects where three other classmates and I made a full- stack application that uses its own server and the OMDB API for some movie data. Users can create lists, like other users' lists, comment on others' lists as well as their own.
+                                            </div>
                                         </Card.Text>
                                     </Card.Body>
                                 </Card>
@@ -145,11 +156,13 @@ function Portfolio() {
                                             </h3>
                                         </Card.Title>
 
-                                        <Card.Img variant="top" src={trivia} />
+                                        <Card.Img variant="top" src={trivia} className={classes.boxShadow} />
 
-                                        <Card.Text>
-                                            This the first of three group project assignment. Here, two classmates and I made a drinking trivia application. We were to use at least two server- side APIs, local storage, and have it be interactive. We made this good looking, fun application that generates random drinks and runs through a 5 question general knowledge trivia game, each using a different API.
-                                        </Card.Text>
+                                        <div className={classes.justify}>
+                                            <Card.Text>
+                                                This the first of three group project assignment. Here, two classmates and I made a drinking trivia application. We were to use at least two server- side APIs, local storage, and have it be interactive. We made this good looking, fun application that generates random drinks and runs through a 5 question general knowledge trivia game, each using a different API.
+                                            </Card.Text>
+                                        </div>
                                     </Card.Body>
                                 </Card>
                             </Col>
@@ -160,16 +173,17 @@ function Portfolio() {
                                         <Card.Title>
                                             <h3 className={classes.portItemTitle}>
                                                 <a href='https://budget-tracker-pablodlc.herokuapp.com/' target="_blank" rel="noreferrer" style={{ textDecoration: 'none', color: '#7395ae' }}>
-                                                    budget-tracker got that PWA! ⚡
+                                                    budget-tracker
                                                 </a>
                                             </h3>
                                         </Card.Title>
 
-                                        <Card.Img variant="top" src={bt} />
-
-                                        <Card.Text>
-                                            budget-tracker is a progressive web application that tracks a budget based on user input. Being a PWA, it remains functional, even when not connected to the internet. It can also be installed as a standalone app on almost any smart device and be used without the need of a web browser!
-                                        </Card.Text>
+                                        <Card.Img variant="top" src={bt} className={classes.boxShadow} />
+                                        <div className={classes.justify}>
+                                            <Card.Text>
+                                                budget-tracker got that PWA! ⚡ budget-tracker is a progressive web application that tracks a budget based on user input. Being a PWA, it remains functional, even when not connected to the internet. It can also be installed as a standalone app on almost any smart device and be used without the need of a web browser!
+                                            </Card.Text>
+                                        </div>
                                     </Card.Body>
                                 </Card>
                             </Col>
@@ -185,11 +199,13 @@ function Portfolio() {
                                             </h3>
                                         </Card.Title>
 
-                                        <Card.Img variant="top" src={socnet} />
+                                        <Card.Img variant="top" src={socnet} className={classes.boxShadow} />
 
-                                        <Card.Text>
-                                            soc-net is a NoSql, MongooseDB/Express.js powered backend application. The user creates a profile as a User. Users can post Thoughts that other users can read and to which post a Reaction. Additionally, Users can friend one another, adding each other to their friend arrays. Because this is just a backend application, there is no deployed site to visit, but please visit my YouTube channel to see it in action!
-                                        </Card.Text>
+                                        <div className={classes.justify}>
+                                            <Card.Text>
+                                                soc-net is a NoSql MongooseDB, Express.js powered backend application. The user creates a profile as a User. Users can post Thoughts that other users can read and to which post a Reaction. Additionally, Users can friend one another, adding each other to their friend arrays. Because this is just a backend application, there is no deployed site to visit, but please visit my YouTube channel to see it in action!
+                                            </Card.Text>
+                                        </div>
                                     </Card.Body>
                                 </Card>
                             </Col>
@@ -206,11 +222,13 @@ function Portfolio() {
                                             </h3>
                                         </Card.Title>
 
-                                        <Card.Img variant="top" src={weather} />
+                                        <Card.Img variant="top" src={weather} className={classes.boxShadow} />
 
-                                        <Card.Text>
-                                            An application that lets users search for weather conditions by city, showing current conditions and gives a five-day forecast. That city search is saved to local storage and a button is automatically generated that repeats the search.  Weather Dashboard uses two APIs: OpenWeather One Call API to fetch weather data, and Moment.js for handling dates on the page.
-                                        </Card.Text>
+                                        <div className={classes.justify}>
+                                            <Card.Text>
+                                                An application that lets users search for weather conditions by city, showing current conditions and gives a five-day forecast. That city search is saved to local storage and a button is automatically generated that repeats the search.  Weather Dashboard uses two APIs: OpenWeather One Call API to fetch weather data, and Moment.js for handling dates on the page.
+                                            </Card.Text>
+                                        </div>
                                     </Card.Body>
                                 </Card>
                             </Col>
@@ -226,11 +244,13 @@ function Portfolio() {
                                             </h3>
                                         </Card.Title>
 
-                                        <Card.Img variant="top" src={ramones} />
+                                        <Card.Img variant="top" src={ramones} className={classes.boxShadow} />
 
-                                        <Card.Text>
-                                            A vanilla HTML fan page for the greatest band of all time. Ever. This was a pre- work assignment for my boot camp to familiarize us with basic HTML. I include it because, mostly, it's the Ramones. But also to demonstrate my earliest efforts.
-                                        </Card.Text>
+                                        <div className={classes.justify}>
+                                            <Card.Text>
+                                                A vanilla HTML fan page for the greatest band of all time. Ever. This was a pre- work assignment for my boot camp to familiarize us with basic HTML. I include it because, mostly, it's the Ramones. But also to demonstrate my earliest efforts.
+                                            </Card.Text>
+                                        </div>
                                     </Card.Body>
                                 </Card>
                             </Col>

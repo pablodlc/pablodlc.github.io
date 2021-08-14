@@ -10,13 +10,7 @@ import Index from "./components/IndexHtml";
 import Container from "@material-ui/core/Container";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles({
-    Body: {
-        padding: '0'
-    }
-})
 
 function App() {
     return (

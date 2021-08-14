@@ -6,7 +6,7 @@ const useStyles = makeStyles({
     h2: {
         fontFamily: '"Bangers", cursive',
         textAlign: 'center',
-        color: 'dark-gray',
+        color: '#5d5c61',
         fontSize: '40px'
     }
 });

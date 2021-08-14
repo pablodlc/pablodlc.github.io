@@ -17,54 +17,38 @@ const useStyles = makeStyles({
     },
     row: {
         display: 'flex',
-        justifyContent: 'space-evenly'
+        flexDirection: 'row',
     },
     imgCol: {
         display: 'flex',
+        flexGrow: '1'
     },
     textCol: {
         display: 'flex',
         flexGrow: '4'
-    },
-    mugImgs: {
-        flexGrow: '1'
 
     },
-    mugShots: {
-        position: 'relative',
-        display: 'inline-block',
-        marginRight: '20px'
+    mugImgs: {
+
     },
     mug: {
+        display: 'flex',
         maxWidth: '300px',
         maxHeight: '300px',
         borderRadius: '50%',
+        marginBottom: '12px',
         boxShadow: '0 0 10px rgba(0, 0, 0, 0.8)',
-
-    },
-    beardo: {
-        width: '300px',
-        borderRadius: '50%',
-        boxShadow: '0 0 10px rgba(0, 0, 0, 0.8)',
-        display: 'none',
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        zIndex: 99
     },
     card: {
-
         borderRadius: '16px',
-        backgroundColor: '#b1a296'
-
+        backgroundColor: '#b1a296',
+        boxShadow: '0 0 10px rgba(0, 0, 0, 0.8)'
     },
     bioText: {
         display: 'flex',
         flexDirection: 'column',
-        flexGrow: '2',
         alignItems: 'center',
-        marginLeft: '1px',
-        padding: '25px',
+        padding: '25px 25px 12px 25px',
         fontFamily: '"Montserrat", sans- serif',
         color: '#2f4f4f',
         textAlign: 'justify',
@@ -78,45 +62,47 @@ function Home() {
 
     return (
         <Container className={classes.container}>
-            <div class='justify-content-center'>
-                <Row className={classes.row}>
-                    <Col className="imgCol">
-                        <div className={classes.mugImgs}>
-                            <img src={mug} className={classes.mug} alt="me as Jekyll and Hyde" />
+            <Row className={classes.row}>
+
+                <Col className={classes.imgCol}>
+                    <div className={classes.mugImgs}>
+                        <img src={mug} className={classes.mug} alt="me as Jekyll and Hyde" />
+                    </div>
+                </Col>
+
+
+                <Col className={classes.textCol}>
+                    <Card className={classes.card}>
+                        <div className={classes.bioText}>
+                            <p>
+                                Hello World! My name is Pablo and I'm a fledgling
+                                programmer. I have a varied background; food service,
+                                retail, social work, law, and currently I'm a technical
+                                writer for a scientific instrument manufacturing company. I
+                                made a cookie cutter webpage long ago and thought it was
+                                great fun. Somehow it never occurred to me that I could
+                                pursue it professionally. Now I'm a novice full-stack web developer able to make a polished UI blah blah blah
+                            </p>
+
+                            <p>
+                                At this point in my learning process, I can build an
+                                interactive site from scratch, that can record user input or
+                                communicate with a server-side API, generate a password, or
+                                make a JavaScript powered game. I love JavaScript and how
+                                powerful it is in making a page fun and dynamic. jQuery is a
+                                handy shorthand I'm familiarizing myself with and using
+                                often. I can use CDNs to customize fonts and include sharp
+                                looking icons, I can fetch data from server-side APIs and
+                                return it to a page. I'm also gaining experience in
+                                JavaScript libraries, like Moment.js, and CSS frameworks;
+                                specifically Bootstrap and Bulma.
+                            </p>
                         </div>
-                    </Col>
+                    </Card>
+                </Col>
 
-                    <Col className="textCol">
-                        <Card className={classes.card}>
-                            <div className={classes.bioText}>
-                                <p>
-                                    Hello World! My name is Pablo and I'm a fledgling
-                                    programmer. I have a varied background; food service,
-                                    retail, social work, law, and currently I'm a technical
-                                    writer for a scientific instrument manufacturing company. I
-                                    made a cookie cutter webpage long ago and thought it was
-                                    great fun. Somehow it never occurred to me that I could
-                                    pursue it professionally. Now I'm a novice full-stack web developer able to make a polished UI blah blah blah
-                                </p>
 
-                                <p>
-                                    At this point in my learning process, I can build an
-                                    interactive site from scratch, that can record user input or
-                                    communicate with a server-side API, generate a password, or
-                                    make a JavaScript powered game. I love JavaScript and how
-                                    powerful it is in making a page fun and dynamic. jQuery is a
-                                    handy shorthand I'm familiarizing myself with and using
-                                    often. I can use CDNs to customize fonts and include sharp
-                                    looking icons, I can fetch data from server-side APIs and
-                                    return it to a page. I'm also gaining experience in
-                                    JavaScript libraries, like Moment.js, and CSS frameworks;
-                                    specifically Bootstrap and Bulma.
-                                </p>
-                            </div>
-                        </Card>
-                    </Col>
-                </Row>
-            </div>
+            </Row>
         </Container>
     )
 }
