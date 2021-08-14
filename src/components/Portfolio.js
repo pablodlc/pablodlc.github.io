@@ -63,11 +63,9 @@ function Portfolio() {
                                 <Card.Body>
                                     <Card.Title>
                                         <h3>
-                                            <Link
-                                                to='https://mymovielistapp.herokuapp.com/'
-                                            >
+                                            <a href='https://mymovielistapp.herokuapp.com/' target="_blank" rel="noreferrer">
                                                 My Movie List
-                                            </Link>{' '}
+                                            </a>
                                         </h3>
                                     </Card.Title>
 
@@ -83,9 +81,9 @@ function Portfolio() {
                                 <Card.Body>
                                     <Card.Title>
                                         <h3>
-                                            <Link to='https://shilohjones194.github.io/TriviaWithATwist/'>
+                                            <a href='https://shilohjones194.github.io/TriviaWithATwist/' target="_blank" rel="noreferrer">
                                                 Trivia With a Twist!
-                                            </Link>
+                                            </a>
                                         </h3>
                                     </Card.Title>
 
@@ -101,9 +99,9 @@ function Portfolio() {
                                 <Card.Body>
                                     <Card.Title>
                                         <h3>
-                                            <Link to='https://budget-tracker-pablodlc.herokuapp.com/'>
+                                            <a href='https://budget-tracker-pablodlc.herokuapp.com/' target="_blank" rel="noreferrer">
                                                 budget-tracker got that PWA! ⚡
-                                            </Link>
+                                            </a>
                                         </h3>
                                     </Card.Title>
 
@@ -119,9 +117,9 @@ function Portfolio() {
                                 <Card.Body>
                                     <Card.Title>
                                         <h3>
-                                            <Link to='https://youtu.be/js68-kxVTs0'>
+                                            <a href='https://youtu.be/js68-kxVTs0' target="_blank" rel="noreferrer">
                                                 soc-net
-                                            </Link>
+                                            </a>
                                         </h3>
                                     </Card.Title>
 
@@ -135,11 +133,12 @@ function Portfolio() {
 
                             <Card className={classes.cardFlex}>
                                 <Card.Body>
+
                                     <Card.Title>
                                         <h3>
-                                            <Link to='https://pablodlc.github.io/weather-dashboard/'>
+                                            <a href='https://pablodlc.github.io/weather-dashboard/' target="_blank" rel="noreferrer">
                                                 Weather Dashboard
-                                            </Link>
+                                            </a>
                                         </h3>
                                     </Card.Title>
 

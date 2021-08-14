@@ -1,24 +1,49 @@
 import React from "react";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 import { Link } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import Navbar from 'react-bootstrap/Navbar';
 
 const useStyles = makeStyles({
+    Row: {
+        width: '100%',
+    },
+    navbar: {
+        backgroundColor: '#5d5c61',
+        width: '100%',
+        justifyContent: 'center'
+
+    },
     flexRow: {
         display: 'flex',
         flexWrap: 'wrap',
+        flexDirection: 'row'
+    },
+    navItems: {
+        display: 'flex',
+        flexWrap: 'wrap',
+        flexDirection: 'row',
         alignItems: 'center',
+        width: '100%'
+    },
+    navLinks: {
+        display: 'flex',
+        flexWrap: 'wrap',
+        flexDirection: 'row',
         justifyContent: 'center',
-        height: '100%',
-        color: '#dbb95f'
+
     },
     h1: {
-        color: 'black',
         fontWeight: 'bold',
         fontSize: '48px',
         margin: '0 15px',
         fontFamily: '"Bangers", cursive',
-
+        marginLeft: 'auto',
+        padding: '17px 200px 17px 50px'
+    },
+    ul: {
+        paddingLeft: '200px'
     },
     li: {
         display: 'flex',
@@ -26,6 +51,7 @@ const useStyles = makeStyles({
         fontSize: '36px',
         justifyContent: 'center',
         margin: '0 15px',
+        paddingTop: '17px',
         fontFamily: '"Bangers", cursive',
         '&:hover': {
             fontFamily: '"Creepster", cursive',
@@ -39,26 +65,28 @@ function Nav() {
 
     return (
 
-        <Navbar className={classes.navbar}>
+        <Navbar fluid className={classes.navbar}>
+            <Row className={classes.flexRow}>
 
-            <h1 className={classes.h1}>
-                <Link to="/" style={{ textDecoration: 'none' }}>Pablo De La Cruz</Link>
-            </h1>
+                <div className={classes.navItems}>
+                    <h1 className={classes.h1}>
+                        <Link to="/" style={{ textDecoration: 'none', color: '#7395ae' }}>Pablo De La Cruz</Link>
+                    </h1>
 
-            <nav>
-                <ul className={classes.flexRow}>
-                    <li className={classes.li}>
-                        <Link to="/portfolio" style={{ textDecoration: 'none' }}>Portfolio</Link>
-                    </li>
-                    <li className={classes.li}>
-                        <Link to="/resume" style={{ textDecoration: 'none' }}>Resume</Link>
-                    </li>
-                    <li className={classes.li}>
-                        <Link to="/contact" style={{ textDecoration: 'none' }}>Contact Me</Link>
-                    </li>
-                </ul>
-            </nav>
+                    <ul className={classes.navLinks} >
+                        <li className={classes.li}>
+                            <Link to="/portfolio" style={{ textDecoration: 'none', color: '#7395ae' }}>Portfolio</Link>
+                        </li>
+                        <li className={classes.li}>
+                            <Link to="/resume" style={{ textDecoration: 'none', color: '#7395ae' }}>Resume</Link>
+                        </li>
+                        <li className={classes.li}>
+                            <Link to="/contact" style={{ textDecoration: 'none', color: '#7395ae' }}>Contact Me</Link>
+                        </li>
+                    </ul>
+                </div>
 
+            </Row>
         </Navbar >
     )
 }
