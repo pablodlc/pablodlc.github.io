@@ -67,7 +67,7 @@ function Resume() {
                                             Assembly: able to assemble nearly all Alicat devices at the senior Production employee level. This includes screwing together stainless steel components and fine soldering skills to wire PCBs together, or change tiny components, like resistors, capacitors, and diodes.
                                         </li>
                                         <li>
-                                            Non-Job Tract: Non-Jobs are builds made as components used in Alicat devices. This includes assembling proprietary valves, coiling bobbins with magnetic wire for use in valves, soldering a wide variety of communication cables, building BB9 communication boxes, and other such components not featured in the product line.
+                                            Non-Job Tract: Non-Jobs are builds that serve as components used in Alicat devices. This includes assembling proprietary valves, coiling bobbins with magnetic wire for use in valves, soldering a wide variety of communication cables, building BB9 communication boxes, and other such components not featured in the product line.
                                         </li>
                                         <li>
                                             Casing: able to case any Alicat device in less time than allotted, typically in half the expected time.
@@ -119,7 +119,6 @@ function Resume() {
                                     <br />
                                     High School Diploma
                                 </p>
-                                <hr />
                                 <br />
 
                                 <h6>References available upon request.</h6>
