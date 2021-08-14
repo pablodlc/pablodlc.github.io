@@ -40,7 +40,8 @@ const useStyles = makeStyles({
         margin: '0 15px',
         fontFamily: '"Bangers", cursive',
         marginLeft: 'auto',
-        padding: '17px 200px 17px 50px'
+        padding: '17px 200px 17px 50px',
+        textShadow: '0 0 16px rgba(0, 0, 0, 0.8)'
     },
     ul: {
         paddingLeft: '200px'
@@ -53,9 +54,11 @@ const useStyles = makeStyles({
         margin: '0 15px',
         paddingTop: '17px',
         fontFamily: '"Bangers", cursive',
+        textShadow: '0 0 10px rgba(0, 0, 0, 0.8)',
         '&:hover': {
             fontFamily: '"Creepster", cursive',
-            fontSize: '36px'
+            fontSize: '33px',
+            textShadow: '0 0 8px rgba(0, 0, 0, 0.8)'
         }
     }
 });

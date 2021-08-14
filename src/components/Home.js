@@ -15,13 +15,12 @@ const useStyles = makeStyles({
         display: 'flex',
         flexWrap: 'wrap',
     },
-    Row: {
-
-
+    row: {
+        display: 'flex',
+        justifyContent: 'space-evenly'
     },
     imgCol: {
         display: 'flex',
-
     },
     textCol: {
         display: 'flex',
@@ -34,12 +33,7 @@ const useStyles = makeStyles({
     mugShots: {
         position: 'relative',
         display: 'inline-block',
-
         marginRight: '20px'
-    },
-    img: {
-        width: '100%',
-
     },
     mug: {
         maxWidth: '300px',
@@ -74,7 +68,7 @@ const useStyles = makeStyles({
         fontFamily: '"Montserrat", sans- serif',
         color: '#2f4f4f',
         textAlign: 'justify',
-        fontSize: '22px'
+        fontSize: '18px'
     },
 });
 
@@ -85,7 +79,7 @@ function Home() {
     return (
         <Container className={classes.container}>
             <div class='justify-content-center'>
-                <Row>
+                <Row className={classes.row}>
                     <Col className="imgCol">
                         <div className={classes.mugImgs}>
                             <img src={mug} className={classes.mug} alt="me as Jekyll and Hyde" />

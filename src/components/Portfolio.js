@@ -13,57 +13,110 @@ import ramones from '../assets/images/Ramones.jpg';
 
 const useStyles = makeStyles({
     container: {
+        margin: '0',
         padding: '20px 35px',
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'space-between',
-        alignItems: 'center'
+        alignItems: 'center',
+        maxWidth: '100%'
+    },
+    row: {
+        display: 'flex',
+        flexWrap: 'wrap',
+        flexDirection: 'row',
+        width: '100%',
+
+    },
+    welcomeCard: {
+        borderRadius: '16px',
+        backgroundColor: '#b1a296',
+        padding: '15px 24px 0px',
+        marginBottom: '24px',
+        color: '#7395ae',
+        boxShadow: '0 0 10px rgba(0, 0, 0, 0.8)'
+    },
+    welcomeTitleDiv: {
+        textAlign: 'center'
+    },
+    welcomeTitle: {
+        fontFamily: '"Bangers", cursive',
+        fontSize: '48px',
+        textShadow: '0 0 8px rgba(0, 0, 0, 0.8)'
     },
     portText: {
         display: 'flex',
-        flexDirection: 'column',
+
+        fontFamily: '"Montserrat", sans- serif',
+        color: '#2f4f4f',
+        textAlign: 'justify',
+        fontSize: '18px'
     },
     portCards: {
         display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
+        flexWrap: 'wrap',
+        flexDirection: 'row',
+
+        maxWidth: '400px'
     },
     cardFlex: {
         display: 'flex',
-        flexDirection: 'column',
+        flexDirection: 'row',
         alignItems: 'center',
+        borderRadius: '16px',
+        backgroundColor: '#b1a296',
+        padding: '24px',
+        marginBottom: '24px',
+        color: '#5d5c61',
+        boxShadow: '0 0 10px rgba(0, 0, 0, 0.8)'
     },
+    portItemTitle: {
+        fontFamily: '"Bangers", cursive',
+        fontSize: '40px',
+        textShadow: '0 0 8px rgba(0, 0, 0, 0.8)',
+        textAlign: 'center'
+    }
 });
 
 function Portfolio() {
     const classes = useStyles();
 
     return (
+
         <Container className={classes.container}>
             <Router>
                 <div>
 
-                    <Row>
-                        <div>
-                            <h2>My Work</h2>
-                        </div>
+                    <Row className={classes.row}>
+                        <Card className={classes.welcomeCard}>
 
-                        <div className={classes.portText}>
-                            <p>
-                                Welcome to my portfolio.
-                                I am new to programming, but in a short time I've been able to make a decent portfolio of which I'm proud. I chose to introduce you to my work with a couple of group projects. The first is group project 2 of 3 from my boot camp called <span className="title">My Movie List</span>. This project follows the MVC framework and uses Sequelize to store a database. <span className="title">Trivia with a Twist!</span> is my first group project from the boot camp, where we utilized two server-side APIs to create quiz application. The next piece is I'm including is <span className="title">budget-tracker</span>, my first PWA--which means it works without an internet connection and can be installed as its own app on most smart devices. Even though it's not a deployed application, I waned to showcase my backend skills with <span className="title">soc-net</span>. <span className="title">soc-net</span> is a social networking backend application that stores Users and Friends, as we'll as Users' Thoughts and friends' Reactions to those Thoughts with MongooseDB. The next piece is <span className="title">Work Day Scheduler</span>, where I utilized two APIs to create a simple app that shows weather conditions of cities based on the user's input. <span className="title">Ramones</span>. Seriously, that page is great if only because of its subject.
-                            </p>
-                        </div>
+                            <Card.Title>
+                                <div className={classes.welcomeTitleDiv}>
+                                    <h2 className={classes.welcomeTitle}>My Work</h2>
+                                </div>
+                            </Card.Title>
+
+                            <Card.Body>
+                                <div className={classes.portText}>
+                                    <p>
+                                        Welcome to my portfolio.
+                                        I am new to programming, but in a short time I've been able to make a decent portfolio of which I'm proud. I chose to introduce you to my work with a couple of group projects. The first is group project 2 of 3 from my boot camp called <span className="title">My Movie List</span>. This project follows the MVC framework and uses Sequelize to store a database. <span className="title">Trivia with a Twist!</span> is my first group project from the boot camp, where we utilized two server-side APIs to create quiz application. The next piece is I'm including is <span className="title">budget-tracker</span>, my first PWA--which means it works without an internet connection and can be installed as its own app on most smart devices. Even though it's not a deployed application, I waned to showcase my backend skills with <span className="title">soc-net</span>. <span className="title">soc-net</span> is a social networking backend application that stores Users and Friends, as we'll as Users' Thoughts and friends' Reactions to those Thoughts with MongooseDB. The next piece is <span className="title">Work Day Scheduler</span>, where I utilized two APIs to create a simple app that shows weather conditions of cities based on the user's input. <span className="title">Ramones</span>. Seriously, that page is great if only because of its subject.
+                                    </p>
+                                </div>
+                            </Card.Body>
+
+                        </Card>
                     </Row>
 
-                    <Row>
-                        <div className={classes.portCards}>
+
+                    <div className={classes.portCards}>
+                        <Row>
 
                             <Card className={classes.cardFlex}>
                                 <Card.Body>
                                     <Card.Title>
-                                        <h3>
-                                            <a href='https://mymovielistapp.herokuapp.com/' target="_blank" rel="noreferrer">
+                                        <h3 className={classes.portItemTitle}>
+                                            <a href='https://mymovielistapp.herokuapp.com/' target="_blank" rel="noreferrer" style={{ textDecoration: 'none', color: '#7395ae' }}>
                                                 My Movie List
                                             </a>
                                         </h3>
@@ -76,6 +129,8 @@ function Portfolio() {
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
+
+                            <br />
 
                             <Card className={classes.cardFlex}>
                                 <Card.Body>
@@ -94,7 +149,10 @@ function Portfolio() {
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
+                        </Row>
 
+
+                        <Row>
                             <Card className={classes.cardFlex}>
                                 <Card.Body>
                                     <Card.Title>
@@ -130,7 +188,9 @@ function Portfolio() {
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
+                        </Row>
 
+                        <Row>
                             <Card className={classes.cardFlex}>
                                 <Card.Body>
 
@@ -167,11 +227,12 @@ function Portfolio() {
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
-                        </div>
-                    </Row>
+
+                        </Row>
+                    </div>
                 </div>
-            </Router>
-        </Container>
+            </Router >
+        </Container >
     )
 }
 
