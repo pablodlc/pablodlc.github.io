@@ -1,6 +1,6 @@
 {
-    "homepage": "https://www.pabloqdelacruz.com",
-    "name": "pablodlc.github.io",
+    "homepage": "http://pabloqdelacruz.com",
+    "name": "pablodlc.github.io.deploy",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
