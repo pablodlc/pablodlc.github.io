@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import { makeStyles } from '@material-ui/core/styles';
 import Row from 'react-bootstrap/Row';
@@ -97,7 +97,7 @@ function Resume() {
                                                 </li>
 
                                                 <li>
-                                                    <span className={classes.bold}>Software and Resources:</span> Visual Studio Code, Insomnia, Postman, GitHub, Heroku, MongoDB Atlas, Chrome Dev Tools, Google.  
+                                                    <span className={classes.bold}>Software and Resources:</span> Visual Studio Code, Insomnia, Postman, GitHub, Heroku, MongoDB Atlas, Chrome Dev Tools, Google.
                                                 </li>
                                             </ul>
                                         </p>

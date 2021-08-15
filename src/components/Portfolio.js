@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { makeStyles } from '@material-ui/styles';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import mml from '../assets/gifs/mml.gif';
 import trivia from '../assets/gifs/trivia-with-a-twist.gif';
 import bt from '../assets/gifs/budget-tracker.gif';

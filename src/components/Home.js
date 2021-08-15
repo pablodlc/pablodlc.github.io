@@ -1,10 +1,9 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+
 import Card from 'react-bootstrap/Card';
 import mug from '../assets/images/mug.jpg';
-import beardo from '../assets/images/beardo.jpg';
+
 import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles({
