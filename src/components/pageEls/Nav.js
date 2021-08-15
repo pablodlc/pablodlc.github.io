@@ -68,7 +68,7 @@ function Nav() {
 
     return (
 
-        <Navbar fluid className={classes.navbar}>
+        <Navbar fluid className={classes.navbar} class='navbar navbar-collapse'>
             <Row className={classes.flexRow}>
 
                 <div className={classes.navItems}>

@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import { makeStyles } from '@material-ui/core/styles';
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
+import Parchment from '../assets/images/parchment.jpg'
 
 const useStyles = makeStyles({
     resumeCard: {
@@ -13,7 +14,12 @@ const useStyles = makeStyles({
     card: {
         padding: '0 48px',
         borderRadius: '16px',
-        boxShadow: '0 0 8px rgba(0, 0, 0, 0.8)'
+        backgroundImage: `url(${Parchment})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed",
+        height: "100%",
+        boxShadow: '0 0 4px rgba(0, 0, 0, 0.8)'
     },
     resumeHeadline: {
         fontFamily: '"Bangers", cursive',
@@ -23,6 +29,14 @@ const useStyles = makeStyles({
         textOutline: '1px black',
         textShadow: '0 0 20px #c3d5cf',
         padding: '10px'
+    },
+    cardTitle: {
+        boxShadow: '0 0 10px rgba(0, 0, 0, 0.8)'
+    },
+    corbenShadow: {
+        fontFamily: '"Corben", serif',
+        fontWeight: 'bold',
+        textShadow: '0 0 4px rgba(0, 0, 0, 0.8)'
     },
     corben: {
         fontFamily: '"Corben", serif',
@@ -58,29 +72,39 @@ function Resume() {
                                 <Card.Title>
                                     <h1>&#123;</h1>
                                     <div class='text-center'>
-                                        <h4 class={classes.corben}>Pablo De La Cruz</h4>
-                                        <h5 class={classes.corben}>Email: <a href='mailto://pablodlc@gmail.com' target="_blank" rel="noreferrer" style={{ textDecoration: 'none', color: '#7395ae', fontFamily: '"Nobile", sans-serif', fontSize: '18px' }}>pablodlc@gmail.com</a> | Tucson, Az., 85705</h5>
+                                        <h3 class={classes.corbenShadow}>Pablo De La Cruz</h3>
+                                        <h5 class={classes.corben}>Tucson, Az. | Email: <a href='mailto://pablodlc@gmail.com' target="_blank" rel="noreferrer" style={{ textDecoration: 'none', color: '#7395ae', fontFamily: '"Nobile", sans-serif', fontSize: '18px' }}>pablodlc@gmail.com</a>  </h5>
                                         <h5 class={classes.corben}>LinkedIn: <a href='https://www.linkedin.com/in/pablodlc' target="_blank" rel="noreferrer" style={{ textDecoration: 'none', color: '#7395ae', fontFamily: '"Nobile"', fontSize: '18px' }}>pablodlc</a> | GitHub: <a href='https://github.com/pablodlc' target="_blank" rel="noreferrer" style={{ textDecoration: 'none', color: '#7395ae', fontFamily: '"Nobile"', fontSize: '18px' }}>pablodlc</a></h5>
                                     </div>
                                 </Card.Title>
 
-                                <Card.Img variant="top" />
-
                                 <Card.Text>
                                     <div className={classes.justify}>
                                         <br />
-                                        <h5 className={classes.corben}>TECHNICAL SKILLS</h5>
+                                        <h5 className={classes.corbenShadow}>TECHNICAL SKILLS</h5>
                                         <p className={classes.nobile}>
-                                            Languages: HTML5, CSS3, JavaScript ES6+, SQL, NoSQL
+                                            MERN Stack developer familiar with the Agile development process and the MVC paradigm familiar with Progressive Web Applications, like this one!
+
                                             <br />
-                                            Applications: GitHub, MongoDB, MySQL
-                                            <br />
-                                            Tools: React, Express.js, Node.js, Handlebars, jQuery, Bootstrap
+
+                                            <ul>
+                                                <li>
+                                                    <span className={classes.bold}>Front End:</span> React, HTML5, CSS3, JavaScript ES6+, jQuery and API/AJAX requests, Flexbox, Bootstrap, React Bootstrap, Material-UI, Bulma, Handlebars, DOM manipulation
+                                                </li>
+
+                                                <li>
+                                                    <span className={classes.bold}>Backend:</span> MySql2, Sequelize (ORM), NoSQL, able to make CLI applications.
+                                                </li>
+
+                                                <li>
+                                                    <span className={classes.bold}>Software and Resources:</span> Visual Studio Code, Insomnia, Postman, GitHub, Heroku, MongoDB Atlas, Chrome Dev Tools, Google.  
+                                                </li>
+                                            </ul>
                                         </p>
                                         <hr />
 
 
-                                        <h5 className={classes.corben}>PROFESSIONAL EXPERIENCE</h5>
+                                        <h5 className={classes.corbenShadow}>PROFESSIONAL EXPERIENCE</h5>
 
                                         <div className={classes.nobile}>
                                             <p>
@@ -92,6 +116,9 @@ function Resume() {
                                                 </div>
 
                                                 Write technical, instructional documentation primarily for use in Production, such as assembling, calibrating, casing, and inspecting Alicat’s devices.  Liaise with co-workers in all departments and at all levels to gather pertinent information for documentation.
+
+                                                <br />
+
                                                 Key Accomplishments:
 
                                                 <ul>
@@ -113,7 +140,7 @@ function Resume() {
                                                         Assembly: able to assemble nearly all Alicat devices at the senior Production employee level. This includes screwing together stainless steel components and fine soldering skills to wire PCBs together, or change tiny components, like resistors, capacitors, and diodes.
                                                     </li>
                                                     <li>
-                                                        Non-Job Tract: Non-Jobs are builds that serve as components used in Alicat devices. This includes assembling proprietary valves, coiling bobbins with magnetic wire for use in valves, soldering a wide variety of communication cables, building BB9 communication boxes, and other such components not featured in the product line.
+                                                        Non-Job Tract: Non-Jobs are builds that serve as components used in Alicat devices. This includes assembling proprietary valves, coiling bobbins with magnetic wire for use in valves, soldering a wide variety of communication cables, building BB9 communication boxes, and other such parts used as components in the assembly of the product line.
                                                     </li>
                                                     <li>
                                                         Casing: able to case any Alicat device in less time than allotted, typically in half the expected time.
@@ -142,7 +169,7 @@ function Resume() {
                                         </div>
                                         <hr />
 
-                                        <h5 className={classes.corben}>EDUCATION</h5>
+                                        <h5 className={classes.corbenShadow}>EDUCATION</h5>
                                         <div className={classes.nobile}>
                                             <p>
                                                 <div className={classes.bold}>
@@ -166,7 +193,7 @@ function Resume() {
                                                 <div className={classes.bold}>
                                                     Buena High School, Sierra Vista, Az.
                                                 </div>
-                                                General Studies, National Art Honors Society, Thespian Society Honor Bar Member
+                                                General Studies, National Art Honors Society, Thespian Society: Honor Bar Member
                                                 <br />
                                                 High School Diploma
                                             </p>

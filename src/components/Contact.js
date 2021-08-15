@@ -1,6 +1,8 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
 import { makeStyles } from '@material-ui/styles';
 import ContactForm from './pageEls/ContactForm.js';
 
@@ -8,36 +10,10 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
 
-import mug from '../assets/images/mug.jpg';
+import Mug from '../assets/images/mug.jpg';
 import beardo from '../assets/images/beardo.jpg';
 
 const useStyles = makeStyles({
-    container: {
-        padding: '20px 35px',
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'space-between',
-        alignItems: 'center'
-    },
-    mug: {
-        width: '300px',
-        borderRadius: '50%',
-        boxShadow: '0 0 10px rgba(0, 0, 0, 0.8)'
-    },
-    beardo: {
-        width: '300px',
-        borderRadius: '50%',
-        boxShadow: '0 0 10px rgba(0, 0, 0, 0.8)',
-        display: 'none',
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        zIndex: 99
-    },
-    directionRow: {
-        display: 'flex',
-        flexDirection: 'row',
-    },
     flexCenter: {
         display: 'flex',
         alignItems: 'space-evenly',
@@ -47,72 +23,97 @@ const useStyles = makeStyles({
         flexDirection: 'column',
         alignItems: 'center',
     },
+    imgCol: {
+        display: 'flex',
+        flexGrow: '1'
+    },
+    cardCol: {
+        display: 'flex',
+        flexGrow: '2'
+    },
+    mug: {
+        display: 'flex',
+        maxWidth: '300px', maxHeight: '300px',
+        borderRadius: '50%',
+        marginBottom: '12px',
+        boxShadow: '0 0 10px rgba(0, 0, 0, 0.8)',
+    },
+    card: {
+        padding: '12px 24px 0 24px',
+        borderRadius: '16px',
+        backgroundColor: '#b1a296',
+        boxShadow: '0 0 10px rgba(0, 0, 0, 0.8)'
+    },
+    h1: {
+        fontWeight: 'bold',
+        fontSize: '36px',
+        fontFamily: '"Bangers", cursive',
+        color: '#7395ae',
+        textAlign: 'center',
+        padding: '17px 0 0',
+        textShadow: '0 0 8px rgba(0, 0, 0, 0.8)'
+    },
+    monts: {
+        fontFamily: '"Montserrat", sans- serif',
+        color: '#2f4f4f',
+        fontSize: '20px'
+    },
+
 });
 
 function Contact() {
 
+    const ContForm = ContactForm;
     const classes = useStyles();
 
     return (
 
-        <Container className={classes.container}>
+        <Container>
             <Row>
-                <div className={classes.directionRow}>
-                    <div className={classes.mug}>
-                        <img src={mug} alt="Me as Jekyll and Hyde"
-                            onMouseOver={e => (e.currentTarget.src = { beardo })}
-                        />
+
+                <Col className={classes.imgCol}>
+                    <div >
+                        <img src={Mug} className={classes.mug} alt="Me as Jekyll and Hyde" />
                     </div>
+                </Col>
 
-                    <h1>Contact Me</h1>
+                <Col className={classes.cardCol}>
+                    <Card className={classes.card}>
+                        <Card.Title>
+                            <h1 className={classes.h1}>Contact Me</h1>
+                        </Card.Title>
 
-                    <p>
-                        Any questions or comments for me or my work?
-                        <br />
-                        Do you want to pay me to do this for you?
-                        <br />
-                        Or have you always wanted to be someone's benefactor?
-                        <br />
-                        Need a friend?
-                        <br />
-                        Visit my profiles on the links below or send me a message using the form at the bottom of the page!
-                    </p>
-                </div>
-            </Row>
+                        <div className={classes.monts}>
+                            <p>
+                                Any questions questions for me or comments about my work?
+                                <br />
+                                Do you want to pay me to do this for you?
+                                <br />
+                                Need a friend?
+                                <br />
+                                Visit my profiles and say hi using the links below!
+                            </p>
+                        </div>
+                        <div className='text-center'>
 
-            <Row>
-                <div className={classes.directionRow}>
-                    <ul className={classes.flexCenter}>
-                        <li>
                             <a href="https://github.com/pablodlc" target="blank">
-                                <GitHubIcon className={classes.item} fontSize='large' />
+                                <GitHubIcon className={classes.item} fontSize='large' style={{ textDecoration: 'none', color: '#5d5c61', margin: '24px' }} />
                             </a>
-                        </li>
 
-                        <li>
                             <a href="https://www.linkedin.com/in/pablodlc" target="blank">
-                                <LinkedInIcon className={classes.item} fontSize='large' />
+                                <LinkedInIcon className={classes.item} fontSize='large' style={{ textDecoration: 'none', color: '#5d5c61', margin: '24px' }} />
                             </a>
-                        </li>
 
-                        <li>
                             <a href="mailto://pablodlc@gmail.com" target="blank">
-                                <EmailIcon className={classes.item} fontSize='large' />
+                                <EmailIcon className={classes.item} fontSize='large' style={{ textDecoration: 'none', color: '#5d5c61', margin: '24px' }} />
                             </a>
-                        </li>
 
-                        <li>
-                            <i class="fa-brands fa-paypal" href="https://paypal.me/pablodlc"></i>
-                        </li>
-                    </ul>
-                </div>
+                        </div>
+                    </Card>
+                </Col>
             </Row>
 
-            <Row>
-                <div className={classes.columnCenter}>
-                    Contact={ContactForm}
-                </div>
-            </Row>
+
 
         </Container>
 

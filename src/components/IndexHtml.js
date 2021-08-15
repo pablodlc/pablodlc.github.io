@@ -11,8 +11,8 @@ const useStyles = makeStyles({
         flexWrap: 'wrap'
     },
     ReactImg: {
-        maxHeight: "500px",
-        maxWidth: "500px"
+        maxHeight: "300px",
+        maxWidth: "300px"
     },
     flexCenter: {
         display: 'flex',
@@ -27,13 +27,19 @@ function IndexHtml() {
 
     return (
         <Container>
-            <Row>
-                <div className={classes.flexCenter}>
+            <div className={classes.flexCenter}>
+                <Row>
                     <h1>Oops, this is a React app!</h1>
-                    <h5>Delete the appended `index.html` in the URL above or click any of the links in the Navbar!</h5>
-                    <img src={ReactImg} className={classes.ReactImg} alt=""></img>
-                </div>
-            </Row>
+                </Row>
+
+                <Row>
+                    <h5 class='text-center'>Delete the appended `index.html` in the URL above or click any of the links in the Navbar!</h5>
+                    <br />
+                    <div class='text-center'>
+                        <img src={ReactImg} className={classes.ReactImg} alt=""></img>
+                    </div>
+                </Row>
+            </div>
         </Container >
     );
 }

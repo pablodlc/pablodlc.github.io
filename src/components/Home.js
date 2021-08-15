@@ -15,21 +15,13 @@ const useStyles = makeStyles({
         display: 'flex',
         flexWrap: 'wrap',
     },
-    row: {
+    flexRow: {
         display: 'flex',
-        flexDirection: 'row',
-    },
-    imgCol: {
-        display: 'flex',
-        flexGrow: '1'
-    },
-    textCol: {
-        display: 'flex',
-        flexGrow: '4'
-
+        justifyContent: 'center'
     },
     mugImgs: {
-
+        display: 'flex',
+        padding: '0 10px'
     },
     mug: {
         display: 'flex',
@@ -61,48 +53,39 @@ function Home() {
     const classes = useStyles();
 
     return (
-        <Container className={classes.container}>
-            <Row className={classes.row}>
+        <Container>
 
-                <Col className={classes.imgCol}>
+            <div className={classes.flexRow}>
+                <div className="align-self-start p-1">
                     <div className={classes.mugImgs}>
                         <img src={mug} className={classes.mug} alt="me as Jekyll and Hyde" />
                     </div>
-                </Col>
+                </div>
 
-
-                <Col className={classes.textCol}>
+                <div className="align-self-start p-1">
                     <Card className={classes.card}>
                         <div className={classes.bioText}>
                             <p>
                                 Hello World! My name is Pablo and I'm a fledgling
                                 programmer. I have a varied background; food service,
                                 retail, social work, law, and currently I'm a technical
-                                writer for a scientific instrument manufacturing company. I
-                                made a cookie cutter webpage long ago and thought it was
-                                great fun. Somehow it never occurred to me that I could
-                                pursue it professionally. Now I'm a novice full-stack web developer able to make a polished UI blah blah blah
+                                writer for a scientific instrument manufacturing company. Long ago I made a cookie-cutter website and thought it was great fun. Somehow it didn't occur to me until recently to pursue it professionally.
                             </p>
 
                             <p>
-                                At this point in my learning process, I can build an
-                                interactive site from scratch, that can record user input or
-                                communicate with a server-side API, generate a password, or
-                                make a JavaScript powered game. I love JavaScript and how
-                                powerful it is in making a page fun and dynamic. jQuery is a
-                                handy shorthand I'm familiarizing myself with and using
-                                often. I can use CDNs to customize fonts and include sharp
-                                looking icons, I can fetch data from server-side APIs and
-                                return it to a page. I'm also gaining experience in
-                                JavaScript libraries, like Moment.js, and CSS frameworks;
-                                specifically Bootstrap and Bulma.
+                                I'm full-stack web developer able to make a polished, responsive webpage with HTML and CSS, powered by JavaScript, or a React app like this one. I can create relational databases with Sequelize or NoSql and make command-line applications for managing databases or automating an output, like a README generator.
+                            </p>
+
+                            <p>
+                                When I'm AFK, my favorite pastime is pool and I play a decent game of 9-ball. I love spending time with my girlfriend, my mom, family, and friends. I'm always up for a board game night and have spent my entire life waiting for that next Zelda game.
                             </p>
                         </div>
                     </Card>
-                </Col>
+                </div>
+            </div>
 
 
-            </Row>
+
         </Container>
     )
 }
