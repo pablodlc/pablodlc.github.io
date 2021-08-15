@@ -33,7 +33,7 @@ function IndexHtml() {
                 </Row>
 
                 <Row>
-                    <h5 class='text-center'>Delete the appended `index.html` in the URL above or click any of the links in the Navbar!</h5>
+                    <h5 class='text-center'>Delete the appended index.html in the URL above or click any of the links in the Navbar!</h5>
                     <br />
                     <div class='text-center'>
                         <img src={ReactImg} className={classes.ReactImg} alt=""></img>
