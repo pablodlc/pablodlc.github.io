@@ -73,7 +73,7 @@ function Home() {
                             </p>
 
                             <p>
-                                I'm full-stack web developer able to make a polished, responsive webpage with HTML and CSS, powered by JavaScript, or a React app like this one. I can create relational databases with Sequelize or NoSql and make command-line applications for managing databases or automating an output, like a README generator. I invite you to visit my original, vanilla portfolio made only 15 weeks before this one by clicking here.
+                                I'm full-stack web developer able to make a polished, responsive webpage with HTML and CSS, powered by JavaScript, or a React app like this one. I can create relational databases with Sequelize or NoSql and make command-line applications for managing databases or automating an output, like a README generator. I invite you to visit my original, vanilla portfolio made only 15 weeks before this one by clicking <a href='https://pablodlc.github.io/portfolio-old/' target="_blank" rel="noreferrer" style={{ textDecoration: 'none', color: '#2f4f4f' }}>here</a>.
                             </p>
 
                             <p>
