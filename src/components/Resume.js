@@ -4,9 +4,13 @@ import Container from 'react-bootstrap/Container';
 import { makeStyles } from '@material-ui/core/styles';
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
+import ResumePdf from '../assets/images/Pablo_De_La_Cruz_resume.pdf'
 import Parchment from '../assets/images/parchment.jpg'
 
 const useStyles = makeStyles({
+    resumeDiv: {
+        padding: '24px 0'
+    },
     resumeCard: {
         width: '75%',
         margin: '0 auto',
@@ -50,7 +54,8 @@ const useStyles = makeStyles({
     },
     justify: {
         textAlign: 'justify'
-    }
+    },
+
 })
 
 function Resume() {
@@ -62,6 +67,11 @@ function Resume() {
                 <Row>
                     <div className={classes.resumeHeadline}>
                         <h1>My Resume</h1>
+                    </div>
+                    <div className={classes.resumeDiv}>
+                        <h3 className='text-center'>
+                            <a href={ResumePdf} style={{ textDecoration: 'none', color: '#7395ae', fontFamily: '"Montserrat", sans- serif', }} download>Click here to download a .pdf copy of my resume.</a>
+                        </h3>
                     </div>
                 </Row>
 
