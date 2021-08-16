@@ -83,7 +83,7 @@ function Resume() {
                                         <br />
                                         <h5 className={classes.corbenShadow}>TECHNICAL SKILLS</h5>
                                         <p className={classes.nobile}>
-                                            MERN Stack developer familiar with the Agile development process and the MVC paradigm familiar with Progressive Web Applications, like this one!
+                                            MERN Stack developer familiar with the Agile development process and the MVC paradigm, and able to make Progressive Web Applications.
 
                                             <br />
 
