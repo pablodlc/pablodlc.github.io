@@ -54,13 +54,12 @@ const useStyles = makeStyles({
         fontSize: '18px'
     },
     portCol: {
-        padding: '0 10px'
+        padding: '12px'
     },
     portCards: {
         display: 'flex',
         flexWrap: 'wrap',
-        justifyContent: 'center'
-
+        justifyContent: 'center',
     },
     cardFlex: {
         display: 'flex',
@@ -68,8 +67,9 @@ const useStyles = makeStyles({
         alignItems: 'center',
         borderRadius: '16px',
         backgroundColor: '#b1a296',
-        padding: '0px 24px',
-        marginBottom: '24px',
+        width: '100%',
+        padding: '0px 12px',
+        marginBottom: '24px 12px 24px 12px',
         color: '#5d5c61',
         boxShadow: '0 0 10px rgba(0, 0, 0, 0.8)'
     },
@@ -97,7 +97,7 @@ function Portfolio() {
             <Router>
                 <div>
 
-                    <Row className={classes.row}>
+                    <Row className={classes.row} id="flexRow">
                         <Card className={classes.welcomeCard}>
 
                             <Card.Title>
@@ -123,7 +123,7 @@ function Portfolio() {
                     <Row className={classes.row}>
                         <div className={classes.portCards}>
 
-                            <Col xs="6" sm="4" className={classes.portCol}>
+                            <Col lg="5" md="9" className={classes.portCol}>
                                 <Card className={classes.cardFlex}>
                                     <Card.Body>
                                         <Card.Title>
@@ -145,7 +145,7 @@ function Portfolio() {
                                 </Card>
                             </Col>
 
-                            <Col xs="6" sm="4" className={classes.portCol}>
+                            <Col lg="5" md="9" className={classes.portCol}>
                                 <Card className={classes.cardFlex}>
                                     <Card.Body>
                                         <Card.Title>
@@ -167,7 +167,7 @@ function Portfolio() {
                                 </Card>
                             </Col>
 
-                            <Col xs="6" sm="4" className={classes.portCol}>
+                            <Col lg="5" md="9" className={classes.portCol}>
                                 <Card className={classes.cardFlex}>
                                     <Card.Body>
                                         <Card.Title>
@@ -188,7 +188,7 @@ function Portfolio() {
                                 </Card>
                             </Col>
 
-                            <Col xs="6" sm="4" className={classes.portCol}>
+                            <Col lg="5" md="9" className={classes.portCol}>
                                 <Card className={classes.cardFlex}>
                                     <Card.Body>
                                         <Card.Title>
@@ -210,7 +210,7 @@ function Portfolio() {
                                 </Card>
                             </Col>
 
-                            <Col xs="6" sm="4" className={classes.portCol}>
+                            <Col lg="5" md="9" className={classes.portCol}>
                                 <Card className={classes.cardFlex}>
                                     <Card.Body>
 
@@ -233,7 +233,7 @@ function Portfolio() {
                                 </Card>
                             </Col>
 
-                            <Col xs="6" sm="4" className={classes.portCol}>
+                            <Col lg="5" md="9" className={classes.portCol}>
                                 <Card className={classes.cardFlex}>
                                     <Card.Body>
                                         <Card.Title>

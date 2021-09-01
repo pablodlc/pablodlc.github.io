@@ -18,18 +18,13 @@ const useStyles = makeStyles({
         display: 'flex',
         alignItems: 'space-evenly',
     },
-    columnCenter: {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-    },
     imgCol: {
         display: 'flex',
-        flexGrow: '1'
+        justifyContent: 'center',
     },
     cardCol: {
         display: 'flex',
-        flexGrow: '2'
+        justifyContent: 'center'
     },
     mug: {
         display: 'flex',
@@ -71,13 +66,13 @@ function Contact() {
         <Container>
             <Row>
 
-                <Col className={classes.imgCol}>
+                <Col lg="5" md="9" className={classes.imgCol} id="imgCol">
                     <div >
                         <img src={Mug} className={classes.mug} alt="Me as Jekyll and Hyde" />
                     </div>
                 </Col>
 
-                <Col className={classes.cardCol}>
+                <Col lg="5" md="9" className={classes.cardCol} id="cardCol">
                     <Card className={classes.card}>
                         <Card.Title>
                             <h1 className={classes.h1}>Contact Me</h1>

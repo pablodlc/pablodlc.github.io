@@ -7,8 +7,6 @@
     pointer-events: none;
 }
 
-
-
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
         animation: App-logo-spin infinite 20s linear;
@@ -36,5 +34,17 @@
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #navH1 {
+        margin-left: 0;
+    }
+    #imgCol {
+        width: 100%;
+    }
+    #cardCol {
+        width: 100%;
     }
 }

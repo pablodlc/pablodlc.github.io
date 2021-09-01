@@ -1,24 +1,20 @@
 import React from "react";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
-import Navbar from 'react-bootstrap/Navbar';
+import '../../App.css';
+
 
 const useStyles = makeStyles({
-    Row: {
-        width: '100%',
-    },
     navbar: {
         backgroundColor: '#5d5c61',
         width: '100%',
-        justifyContent: 'center'
-
     },
     flexRow: {
         display: 'flex',
         flexWrap: 'wrap',
-        flexDirection: 'row'
+        flexDirection: 'row',
+        justifyContent: 'space-evenly'
     },
     navItems: {
         display: 'flex',
@@ -40,7 +36,7 @@ const useStyles = makeStyles({
         margin: '0 15px',
         fontFamily: '"Bangers", cursive',
         marginLeft: 'auto',
-        padding: '17px 200px 17px 50px',
+        padding: '16px 16px 16px 50px',
         textShadow: '0 0 16px rgba(0, 0, 0, 0.8)'
     },
     ul: {
@@ -63,35 +59,38 @@ const useStyles = makeStyles({
     }
 });
 
-function Nav() {
+function Header() {
     const classes = useStyles();
 
     return (
 
-        <Navbar fluid className={classes.navbar} class='navbar navbar-collapse'>
-            <Row className={classes.flexRow}>
+        <Container>
+            <Navbar collapseOnSelect expand="lg" fluid className={classes.navbar}>
+
 
                 <div className={classes.navItems}>
-                    <h1 className={classes.h1}>
+                    <h1 className={classes.h1} id="navH1">
                         <Link to="/" style={{ textDecoration: 'none', color: '#7395ae' }}>Pablo De La Cruz</Link>
                     </h1>
 
-                    <ul className={classes.navLinks} >
-                        <li className={classes.li}>
-                            <Link to="/portfolio" style={{ textDecoration: 'none', color: '#7395ae' }}>Portfolio</Link>
-                        </li>
-                        <li className={classes.li}>
-                            <Link to="/resume" style={{ textDecoration: 'none', color: '#7395ae' }}>Resume</Link>
-                        </li>
-                        <li className={classes.li}>
-                            <Link to="/contact" style={{ textDecoration: 'none', color: '#7395ae' }}>Contact Me</Link>
-                        </li>
-                    </ul>
+                    <Navbar.Toggle aria-controls='responsive-navbar-nav' />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className={classes.navLinks} >
+
+                            <Nav.Link className={classes.li} href="/portfolio" style={{ textDecoration: 'none', color: '#7395ae' }}>Portfolio</Nav.Link>
+
+                            <Nav.Link className={classes.li} href="/resume" style={{ textDecoration: 'none', color: '#7395ae' }}>Resume</Nav.Link>
+
+                            <Nav.Link className={classes.li} href="/contact" style={{ textDecoration: 'none', color: '#7395ae' }}>Contact Me</Nav.Link>
+
+                        </Nav>
+                    </Navbar.Collapse>
                 </div>
 
-            </Row>
-        </Navbar >
+
+            </Navbar >
+        </Container>
     )
 }
 
-export default Nav;
+export default Header;

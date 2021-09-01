@@ -1,22 +1,23 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 import Card from 'react-bootstrap/Card';
 import mug from '../assets/images/mug.jpg';
 
 import { makeStyles } from '@material-ui/styles';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const useStyles = makeStyles({
-    container: {
-        width: '100vw',
-        paddingTop: '20px',
-        margin: '0 50px',
-        display: 'flex',
-        flexWrap: 'wrap',
-    },
     flexRow: {
         display: 'flex',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        marginTop: '12px'
+    },
+    imgCol: {
+        display: 'flex',
+        justifyContent: 'center',
     },
     mugImgs: {
         display: 'flex',
@@ -52,16 +53,21 @@ function Home() {
     const classes = useStyles();
 
     return (
-        <Container>
+        <Container id="homeContainer">
 
-            <div className={classes.flexRow}>
-                <div className="align-self-start p-1">
-                    <div className={classes.mugImgs}>
-                        <img src={mug} className={classes.mug} alt="me as Jekyll and Hyde" />
+            <Row>
+
+                <Col lg="5" md="9" className={classes.imgCol} id="imgCol">
+
+                    <div className="align-self-start p-1">
+                        <div className={classes.mugImgs} id="homeMug">
+                            <img src={mug} className={classes.mug} alt="me as Jekyll and Hyde" />
+                        </div>
                     </div>
-                </div>
+                </Col>
 
-                <div className="align-self-start p-1">
+                <Col lg="5" md="9" className={classes.cardCol} id="cardCol">
+
                     <Card className={classes.card}>
                         <div className={classes.bioText}>
                             <p>
@@ -80,12 +86,12 @@ function Home() {
                             </p>
                         </div>
                     </Card>
-                </div>
-            </div>
+
+                </Col>
 
 
-
-        </Container>
+            </Row >
+        </Container >
     )
 }
 

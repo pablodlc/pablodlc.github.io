@@ -1,6 +1,6 @@
 import React from 'react';
 import "./App.css";
-import Nav from "./components/pageEls/Nav";
+import Header from "./components/pageEls/Nav";
 import Home from "./components/Home";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
@@ -18,7 +18,7 @@ function App() {
         <Container disableGutters maxWidth={false}>
             <div>
                 <Router>
-                    <Nav />
+                    <Header />
 
                     <Switch>
                         <Route exact path="/">
