@@ -77,11 +77,11 @@ function Header() {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className={classes.navLinks} >
 
-                            <Nav.Link className={classes.li} href="/portfolio" style={{ textDecoration: 'none', color: '#7395ae' }}>Portfolio</Nav.Link>
+                            <Link to="/portfolio" className={classes.li} style={{ textDecoration: 'none', color: '#7395ae' }}>Portfolio</Link>
 
-                            <Nav.Link className={classes.li} href="/resume" style={{ textDecoration: 'none', color: '#7395ae' }}>Resume</Nav.Link>
+                            <Link to="/resume" className={classes.li} style={{ textDecoration: 'none', color: '#7395ae' }}>Resume</Link>
 
-                            <Nav.Link className={classes.li} href="/contact" style={{ textDecoration: 'none', color: '#7395ae' }}>Contact Me</Nav.Link>
+                            <Link to="/contact" className={classes.li} style={{ textDecoration: 'none', color: '#7395ae' }}>Contact Me</Link>
 
                         </Nav>
                     </Navbar.Collapse>
