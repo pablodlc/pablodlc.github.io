@@ -7,7 +7,7 @@ import Card from 'react-bootstrap/Card';
 import mug from '../assets/images/mug.jpg';
 
 import { makeStyles } from '@material-ui/styles';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
+
 
 const useStyles = makeStyles({
     flexRow: {

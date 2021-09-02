@@ -4,14 +4,14 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import { makeStyles } from '@material-ui/styles';
-import ContactForm from './pageEls/ContactForm.js';
+// import ContactForm from './pageEls/ContactForm.js';
 
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
 
 import Mug from '../assets/images/mug.jpg';
-import beardo from '../assets/images/beardo.jpg';
+// import beardo from '../assets/images/beardo.jpg';
 
 const useStyles = makeStyles({
     flexCenter: {
@@ -58,7 +58,7 @@ const useStyles = makeStyles({
 
 function Contact() {
 
-    const ContForm = ContactForm;
+    // const ContForm = ContactForm;
     const classes = useStyles();
 
     return (
