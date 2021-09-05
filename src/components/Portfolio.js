@@ -32,7 +32,7 @@ const useStyles = makeStyles({
     welcomeCard: {
         width: '75%',
         borderRadius: '16px',
-        backgroundColor: '#b1a296',
+        background: 'linear-gradient(to bottom, #b1a296, #6e6d83)',
         padding: '15px 24px 0px',
         marginBottom: '24px',
         color: '#7395ae',
@@ -49,7 +49,7 @@ const useStyles = makeStyles({
     portText: {
         display: 'flex',
         fontFamily: '"Montserrat", sans- serif',
-        color: '#2f4f4f',
+        color: '#0d1c1c',
         textAlign: 'justify',
         fontSize: '18px'
     },
@@ -66,11 +66,11 @@ const useStyles = makeStyles({
         flexDirection: 'row',
         alignItems: 'center',
         borderRadius: '16px',
-        backgroundColor: '#b1a296',
+        background: 'linear-gradient(to bottom, #b1a296, #6e6d83)',
         width: '100%',
         padding: '0px 12px',
         marginBottom: '24px 12px 24px 12px',
-        color: '#5d5c61',
+        color: '##0d1c1c',
         boxShadow: '0 0 10px rgba(0, 0, 0, 0.8)'
     },
     portItemTitle: {
@@ -110,8 +110,8 @@ function Portfolio() {
                                 <div className={classes.portText}>
                                     <p>
                                         Welcome to my portfolio.
-                                        I am new to programming, but in a short time I've been able to make a decent portfolio of which I'm proud. I chose to introduce you to my work with a couple of group projects. The first is group project 2 of 3 from my boot camp called <span className="title">My Movie List</span>. This project follows the MVC framework and uses Sequelize to store a database. <span className="title">Trivia with a Twist!</span> is my first group project from the boot camp, where we utilized two server-side APIs to create quiz application. The next piece is I'm including is <span className="title">budget-tracker</span>, my first PWA--which means it works without an internet connection and can be installed as its own app on most smart devices. Even though it's not a deployed application, I waned to showcase my backend skills with <span className="title">soc-net</span>. <span className="title">soc-net</span> is a social networking backend application that stores Users and Friends, as we'll as Users' Thoughts and friends' Reactions to those Thoughts with MongooseDB. The next piece is <span className="title">Work Day Scheduler</span>, where I utilized two APIs to create a simple app that shows weather conditions of cities based on the user's input. <span className="title">Ramones</span>. Seriously, that page is great if only because of its subject.
-                                        Finally, while you're here, feel free to check out my old portfolio <a href='https://pablodlc.github.io/portfolio-old/' target="_blank" rel="noreferrer" style={{ textDecoration: 'none', color: '#2f4f4f' }}>here</a>. This one was made 15 weeks earlier than the one you're visiting now, and I'd like to think I've made some progress along the way.
+                                        I am new to programming, but in a short time I've been able to make a decent portfolio of which I'm proud. I chose to introduce you to my work with a couple of group projects. The first is group project 2 of 3 from my boot camp called <span className="title">My Movie List</span>. This project follows the MVC framework and uses Sequelize to store a database. <span className="title">Trivia with a Twist!</span> is my first group project from the boot camp, where we utilized two server-side APIs to create quiz application. The next piece is I'm including is <span className="title">budget-tracker</span>, my first PWA--which means it works without an internet connection and can be installed as its own app on most smart devices. Even though it's not a deployed application, I wanted to showcase my backend skills with <span className="title">soc-net</span>. <span className="title">soc-net</span> is a social networking backend application that stores Users and Friends, as we'll as Users' Thoughts and friends' Reactions to those Thoughts with MongooseDB. The next piece is <span className="title">Work Day Scheduler</span>, where I utilized two APIs to create a simple app that shows weather conditions of cities based on the user's input. <span className="title">Ramones</span>. Seriously, that page is great if only because of its subject.
+                                        Finally, while you're here, feel free to <span style={{ fontWeight: "bold" }}>check out my old portfolio <a href='https://pablodlc.github.io/portfolio-old/' target="_blank" rel="noreferrer" style={{ textDecoration: 'none', color: '#2f4f4f' }}>here</a> </span>. This one was made 15 weeks earlier than the one you're visiting now, and I'd like to think I've made some progress along the way.
                                     </p>
                                 </div>
                             </Card.Body>

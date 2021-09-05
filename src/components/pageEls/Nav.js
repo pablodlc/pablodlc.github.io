@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar, Nav, Row } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import '../../App.css';
@@ -9,6 +9,8 @@ const useStyles = makeStyles({
     navbar: {
         backgroundColor: '#5d5c61',
         width: '100%',
+        display: 'flex',
+        justifyContent: 'space-evenly'
     },
     flexRow: {
         display: 'flex',
@@ -64,9 +66,9 @@ function Header() {
 
     return (
 
-        <Container>
-            <Navbar collapseOnSelect expand="lg" fluid className={classes.navbar}>
 
+        <Navbar collapseOnSelect expand="lg" fluid className={classes.navbar}>
+            <Row>
 
                 <div className={classes.navItems}>
                     <h1 className={classes.h1} id="navH1">
@@ -87,9 +89,9 @@ function Header() {
                     </Navbar.Collapse>
                 </div>
 
+            </Row>
+        </Navbar >
 
-            </Navbar >
-        </Container>
     )
 }
 

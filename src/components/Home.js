@@ -33,8 +33,8 @@ const useStyles = makeStyles({
     },
     card: {
         borderRadius: '16px',
-        backgroundColor: '#b1a296',
-        boxShadow: '0 0 10px rgba(0, 0, 0, 0.8)'
+        boxShadow: '0 0 10px rgba(0, 0, 0, 0.8)',
+        background: 'linear-gradient(to bottom, #b1a296, #6e6d83)'
     },
     bioText: {
         display: 'flex',
@@ -42,7 +42,7 @@ const useStyles = makeStyles({
         alignItems: 'center',
         padding: '25px 25px 12px 25px',
         fontFamily: '"Montserrat", sans- serif',
-        color: '#2f4f4f',
+        color: '#0d1c1c',
         textAlign: 'justify',
         fontSize: '18px'
     },

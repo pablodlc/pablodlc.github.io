@@ -36,7 +36,7 @@ const useStyles = makeStyles({
     card: {
         padding: '12px 24px 0 24px',
         borderRadius: '16px',
-        backgroundColor: '#b1a296',
+        background: 'linear-gradient(to bottom, #b1a296, #6e6d83)',
         boxShadow: '0 0 10px rgba(0, 0, 0, 0.8)'
     },
     h1: {
@@ -50,7 +50,7 @@ const useStyles = makeStyles({
     },
     monts: {
         fontFamily: '"Montserrat", sans- serif',
-        color: '#2f4f4f',
+        color: '#0d1c1c',
         fontSize: '20px'
     },
 
@@ -92,15 +92,15 @@ function Contact() {
                         <div className='text-center'>
 
                             <a href="https://github.com/pablodlc" target="blank">
-                                <GitHubIcon className={classes.item} fontSize='large' style={{ textDecoration: 'none', color: '#5d5c61', margin: '24px' }} />
+                                <GitHubIcon className={classes.item} fontSize='large' style={{ textDecoration: 'none', color: '#0d1c1c', margin: '24px' }} />
                             </a>
 
                             <a href="https://www.linkedin.com/in/pablodlc" target="blank">
-                                <LinkedInIcon className={classes.item} fontSize='large' style={{ textDecoration: 'none', color: '#5d5c61', margin: '24px' }} />
+                                <LinkedInIcon className={classes.item} fontSize='large' style={{ textDecoration: 'none', color: '#0d1c1c', margin: '24px' }} />
                             </a>
 
                             <a href="mailto://pablodlc@gmail.com" target="blank">
-                                <EmailIcon className={classes.item} fontSize='large' style={{ textDecoration: 'none', color: '#5d5c61', margin: '24px' }} />
+                                <EmailIcon className={classes.item} fontSize='large' style={{ textDecoration: 'none', color: '#0d1c1c', margin: '24px' }} />
                             </a>
 
                         </div>

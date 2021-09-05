@@ -186,9 +186,7 @@ function Resume() {
                                                 <div className={classes.bold}>
                                                     The University of Arizona Continuing & Professional Education, Tucson, Az.
                                                 </div>
-                                                Full-Stack Web Development Certification (not yet obtained)
-                                                <br />
-                                                Expected graduation date: 8/19/2021
+                                                Full-Stack Web Development Certification
                                             </p>
 
                                             <p>
